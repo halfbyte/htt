@@ -1,0 +1,31 @@
+  
+%h2.title
+  = "##{@item.id}"
+  = @path_items.join(" / ")
+  
+
+.time-form
+  - form_tag do
+    %p
+      %label
+        = @path_items.join("/")
+        \/
+        = text_field_tag :dynamic_path
+    %p
+      You could leave this empty for starting a new time slot NOW
+    %p
+      %label
+        Time spec
+        = text_field_tag :time
+.clock
+  %canvas{:width => 150, :height => 150}
+
+.explorer
+  %h3 Explorer
+  %ul
+    - if @item.parent
+      %li= link_to "..", path_path(:path => '') + @path_items.first(@path_items.size - 1).join("/")
+    - @item.children.each do |child|
+      %li= link_to h(child.name), path_path(:path => '') + (@path_items + [child.permalink]).join("/")
+    %li= render :partial => 'new', :locals => {:parent_id => @item.id}
+

@@ -1,0 +1,5 @@
+%li
+  = path.name
+  %span[path]= link_to_remote "&gt;", :url => new_trackable_path(:parent_id => path.id), :update => "trackable_#{path.id}"
+  %ul
+    = render :partial => 'path', :collection => path.children

@@ -1,0 +1,4 @@
+%h2 All Trackables
+%ul
+  = render :partial => 'path', :collection => @trackable_root.children if @trackable_root
+  %li#trackable_root= link_to_remote "Add", :url => new_trackable_path(:parent_id => @trackable_root.id), :update => 'trackable_root'

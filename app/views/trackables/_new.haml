@@ -1,0 +1,4 @@
+- form_for Trackable.new do |f|
+  = f.text_field :name
+  = hidden_field_tag :parent_id, parent_id
+  = f.submit "Add"

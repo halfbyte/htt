@@ -1,0 +1,40 @@
+@import blueprint.sass
+@import blueprint/modules/scaffolding.sass
+@import compass/reset.sass
+
++blueprint
+// Remove the scaffolding when you're ready to start doing visual design.
+// Or leave it in if you're happy with how blueprint looks out-of-the-box
++blueprint-scaffolding
+
+#container
+  +container
+
+#header
+  +column(24)
+  :border
+    :bottom 1px solid black
+
+
+
+#content
+  +column(24)
+  h2.title
+    +column(24)
+#footer
+  +column(24)
+  :border
+    :top 1px solid black
+
+
+.explorer
+  +column(24)
+  
+.time-form
+  +column(20)
+  
+.clock
+  +column(4, true)
+  :height 150px
+  :background transparent url(/images/clock.png) top left no-repeat
+  
