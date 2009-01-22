@@ -9,13 +9,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090119202411) do
+ActiveRecord::Schema.define(:version => 20090121191214) do
 
   create_table "trackables", :force => true do |t|
     t.string   "name"
     t.string   "permalink"
     t.integer  "parent_id"
     t.boolean  "billable"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "trackings", :force => true do |t|
+    t.datetime "starts_at"
+    t.datetime "ends_at"
+    t.float    "hours"
+    t.text     "description"
+    t.integer  "trackable_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

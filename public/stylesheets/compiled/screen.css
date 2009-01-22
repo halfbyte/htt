@@ -1100,6 +1100,11 @@ hr.space {
   width: 950px;
   margin-right: 10px; }
 
+.trackings {
+  float: left;
+  width: 950px;
+  margin-right: 10px; }
+
 .time-form {
   float: left;
   width: 790px;

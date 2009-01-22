@@ -19,7 +19,7 @@ class TrackablesController < ApplicationController
   end
   
   def path
-  
+    @trackings = @item.trackings
   end
 protected
   def not_found

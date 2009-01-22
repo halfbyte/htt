@@ -2,9 +2,9 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 Event.observe(window, 'load', function(e) {
-  if ($('time')) {
+  if ($('tracking_time')) {
     new Form.Element.Observer(
-      'time',
+      'tracking_time',
       0.2,
       function(el, value) {
         

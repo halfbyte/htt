@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  starts_at: 2009-01-21 20:12:14
+  ends_at: 2009-01-21 20:12:14
+  hours: 1.5
+  description: MyText
+  trackable_id: 1
+
+two:
+  starts_at: 2009-01-21 20:12:14
+  ends_at: 2009-01-21 20:12:14
+  hours: 1.5
+  description: MyText
+  trackable_id: 1

@@ -1,0 +1,5 @@
+- Wenn Tracking offen, können keine weiteren offenen Trackings erfasst werden
+- Trackings dürfen sich nicht überschneiden, auch nicht auf unterschiedlichen Trackables (Also validierung nicht scopen)- das wird teuer...
+
+- Wichtig: Timezones beachten!
+
